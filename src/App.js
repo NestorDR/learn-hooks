@@ -61,6 +61,9 @@ function App() {
         3- No aparece, es decir se omite el array, useEffect se ejecuta en cada modificación de cualquiera de las
             propiedades/variables del estado o re-renderización, actuando como componentDidMount y componentDidUpdate (NO
             recomendado)
+
+      Si en ussEffect se codifica un return, éste debe devolver una función, la cual se ejecutaría antes de una nueva
+        renderización, que equivaldria a componentWillUnmount.
   */
   useEffect( () => {
     document.title = waiting ? 'Esperando...' : 'Aprendiendo React';

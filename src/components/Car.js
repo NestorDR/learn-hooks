@@ -21,13 +21,16 @@ const Car = () => {
       Al usar este hook, decimos a React.Js que el componente debe hacer algo después de renderizarse.
 
       Si el parámetro dependencies de useEffect
-        1- Enumera propiedades/variables del estado, por ej. [waiting], se le está diciendo a React cuales
+        1- Enumera propiedades/variables del estado, por ej. [carOn], se le está diciendo a React cuales
             propiedades/variables se tendrán en cuenta para disparar una nueva renderización.
             Actúa como componentDidMount y, componentDidUpdate tras haberse modificado esas propiedades/variables
         2- Es un array vacío, o sea [], useEffect actúa como componentDidMount, solo se ejecuta en la 1ª renderización
         3- No aparece, es decir se omite el array, useEffect se ejecuta en cada modificación de cualquiera de las
             propiedades/variables del estado o re-renderización, actuando como componentDidMount y componentDidUpdate
             (NO recomendado)
+
+      Si en ussEffect se codifica un return, éste debe devolver una función, la cual se ejecutaría antes de una nueva
+        renderización, que equivaldria a componentWillUnmount.
   */
   useEffect( () => {
       if (carOn) {
