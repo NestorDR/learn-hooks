@@ -7,16 +7,18 @@ const Car = () => {
 
   /*
     useState: Es el hook de React.Js que permite manejar estados dentro de un componente funcional.
-      Sería el equivalente a this.state/state. Su uso devuelve un array donde la posición [0] es el valor de la
-      variable, y la posición [1] es una función para actualizar el valor de la variable.
+      Sería el equivalente a this.state/state de un componente clase.
+      Su uso devuelve un array donde la posición [0] es el valor de la variable, y la posición [1] es una función
+        para actualizar el valor de la variable.
       Como parámetro de entrada recibe el valor inicial de la variable a almacenar en el estado.
   */
   const [carOn, setCarOn] = useState(false);
   const [countKm, setCountKm] = useState(0);
 
   /*
-    useEffect: Es el hook de React.Js que permite llevar a cabo efectos secundarios en componentes funcionales.
-      Equivale a componentDidMount, componentDidUpdate y componentWillUnmount combinados.
+    useEffect: Es el hook de React.Js que permite encargarse de los efectos secundarios o colaterales en componentes
+      funcionales. Equivale a componentDidMount, componentDidUpdate y componentWillUnmount combinados,
+      de un componente clase.
 
       Al usar este hook, decimos a React.Js que el componente debe hacer algo después de renderizarse.
 

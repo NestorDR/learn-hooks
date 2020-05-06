@@ -5,16 +5,17 @@ Hooks are a new feature in React 16.8. They allow you to use the state, effect a
 This simple example allows you to test useState and useEffect, along with some React-Bootstrap controls.
 
 #### useState
-It's the React.Js hook that allows to manage states within a functional component. It would be the equivalent of this.state / state.
+It's the React.Js hook that allows to manage states within a functional component. It would be the equivalent of **this.state** / **state** of a class component.
 
 #### useEffect
-It's the hook of React.Js that allows to carry out secondary effects in functional components. It is equivalent to **componentDidMount**, **componentDidUpdate** and **componentWillUnmount** combined.
+It's the hook of React.Js that allows to carry out secondary effects in functional components. It is equivalent to **componentDidMount**, **componentDidUpdate** and **componentWillUnmount** combined, of a class component.
 
 By using this hook, we tell React.Js that the component must do something after it is rendered.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
